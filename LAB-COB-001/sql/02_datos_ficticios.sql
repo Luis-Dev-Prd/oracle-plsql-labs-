@@ -1,0 +1,13 @@
+-- LAB-COB-001 | Datos de ejemplo
+-- Ejecutar una sola vez. Estos identificadores e importes son ficticios.
+
+INSERT ALL
+    INTO CORE_EMISION_LAB (
+        OFICINA_ID, DOC_ID, POLIZA_ID, OBLIGACION_ID, TIPO_DOCUMENTO, IMPORTE
+    ) VALUES ('001', 501, 101, 'OBL-001', 'PRIMA', 100)
+    INTO CORE_EMISION_LAB (
+        OFICINA_ID, DOC_ID, POLIZA_ID, OBLIGACION_ID, TIPO_DOCUMENTO, IMPORTE
+    ) VALUES ('001', 502, 101, 'OBL-001', 'IMPUESTO', 20)
+SELECT 1 FROM DUAL;
+
+COMMIT;
