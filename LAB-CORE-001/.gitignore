@@ -1,0 +1,9 @@
+# Archivos locales o confidenciales: mantener fuera del portafolio.
+.env
+.env.*
+*.log
+*.tmp
+private/
+privado/
+manuales_privados/
+secretos/
