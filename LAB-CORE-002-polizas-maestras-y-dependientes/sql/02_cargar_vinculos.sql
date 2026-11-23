@@ -1,0 +1,24 @@
+-- LAB-CORE-002 | Relaciones ficticias
+-- Requiere las pólizas 101, 102, 103 y 104 de LAB-CORE-001.
+-- Ejecutar una sola vez: los POLICY_ID son PK.
+
+INSERT INTO POLIZAS_VINCULOS_LAB
+    (POLICY_ID, MASTER_POLICY_ID)
+VALUES (102, 101);
+
+INSERT INTO POLIZAS_VINCULOS_LAB
+    (POLICY_ID, MASTER_POLICY_ID)
+VALUES (103, 101);
+
+-- Conservamos una referencia a un ID de maestra no recuperable en esta muestra.
+INSERT INTO POLIZAS_VINCULOS_LAB
+    (POLICY_ID, MASTER_POLICY_ID)
+VALUES (104, 999);
+
+COMMIT;
+
+SELECT
+    POLICY_ID,
+    MASTER_POLICY_ID
+FROM POLIZAS_VINCULOS_LAB
+ORDER BY POLICY_ID;
