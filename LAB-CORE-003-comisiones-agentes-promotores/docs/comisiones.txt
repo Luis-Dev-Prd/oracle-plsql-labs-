@@ -1,0 +1,24 @@
+🔎 **Oracle SQL | Cuando el tipo de comisión no es suficiente**
+
+Dos intermediarios tienen registrada una comisión OVERRIDE, pero solamente uno cumple las condiciones comerciales para ser clasificado como promotor.
+
+¿Cómo podemos identificar esa diferencia mediante SQL?
+
+En este laboratorio ficticio del negocio asegurador, te muestro paso a paso cómo aplicar:
+
+🔹 LEFT JOIN
+🔹 NOT EXISTS
+🔹 DISTINCT
+🔹 IN
+🔹 SUM(CASE WHEN)
+🔹 GROUP BY
+
+El desafío no termina al calcular las comisiones.
+
+De las 245 unidades registradas en origen, 230 quedan clasificadas y 15 requieren una definición funcional adicional.
+
+¿Qué tratamiento les darías a esas 15 unidades?
+
+💡 SQL calcula. El negocio define qué calcular.
+
+#OracleSQL #PLSQL #Seguros #DataQuality #AnalisisTecnicoFuncional #IntegracionDeDatos

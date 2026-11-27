@@ -1,0 +1,47 @@
+🔎 **Oracle SQL | ¿Cómo clasificar correctamente las comisiones de agentes y promotores?**
+
+En el negocio asegurador, las comisiones representan una parte importante de la relación comercial entre la aseguradora y sus intermediarios.
+
+Pero no todas las comisiones tienen el mismo origen ni responden a las mismas condiciones.
+
+Por ejemplo:
+
+🔹 **REGULAR:** comisión asociada directamente a la actividad comercial de un agente.
+
+🔹 **OVERRIDE:** comisión adicional que puede corresponder a un promotor o responsable de una estructura comercial, según las condiciones establecidas.
+
+Ahora bien, **¿alcanza con identificar el tipo de comisión para clasificarla correctamente?**
+
+No necesariamente.
+
+En este tercer laboratorio, **LAB-CORE-003 | Comisiones de agentes y promotores**, desarrollé un caso práctico con Oracle SQL y datos completamente ficticios para analizar este escenario.
+
+Para resolverlo utilicé:
+
+✅ `NOT EXISTS` para identificar participantes según sus relaciones dentro de la estructura comercial.
+
+✅ `DISTINCT` e `IN` para determinar qué identificadores cumplen las condiciones de clasificación.
+
+✅ `SUM(CASE WHEN)` para calcular los importes correspondientes a cada categoría.
+
+✅ `GROUP BY` para consolidar los resultados por póliza y anexo.
+
+**¿Qué encontramos al ejecutar el laboratorio en Oracle?**
+
+Sobre 245 unidades monetarias ficticias registradas:
+
+- 200 corresponden a comisiones REGULAR de agentes.
+- 30 corresponden a comisiones OVERRIDE elegibles de promotor.
+- 15 corresponden a una comisión OVERRIDE que no cumple las condiciones definidas para esa clasificación.
+
+Este último punto es especialmente importante: **que un importe no forme parte de una categoría calculada no significa que haya desaparecido de los datos de origen.**
+
+💡 **La clasificación de los datos debe responder a las reglas del negocio, no solamente a los valores registrados en una columna.**
+
+En procesos de integración, comprender estas diferencias resulta fundamental para construir consultas consistentes y preservar la trazabilidad de la información.
+
+📄 En el carrusel comparto el contexto funcional, la lógica Oracle SQL y los resultados validados.
+
+Una nueva entrega de mi serie de laboratorios, donde combino desarrollo SQL, integración de datos y análisis técnico-funcional aplicado al negocio asegurador.
+
+#OracleSQL #PLSQL #SQL #IntegracionDeDatos #AnalisisTecnicoFuncional #Seguros #DataQuality

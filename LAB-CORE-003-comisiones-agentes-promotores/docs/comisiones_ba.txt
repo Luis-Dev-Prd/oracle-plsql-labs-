@@ -1,0 +1,47 @@
+🔎 **Oracle SQL | Cuando una consulta genera nuevas preguntas de negocio**
+
+En el negocio asegurador, un intermediario puede desempeñar diferentes roles comerciales:
+
+🔹 **Agente:** comercializa seguros y puede recibir comisiones por su producción directa.
+
+🔹 **Promotor:** desarrolla y coordina una red de agentes, pudiendo recibir comisiones adicionales por su producción.
+
+Pero ¿alcanza con conocer el tipo de comisión para clasificarla correctamente?
+
+En este laboratorio ficticio, mediante Oracle SQL, analizamos las relaciones comerciales utilizando:
+
+✅ LEFT JOIN  
+✅ NOT EXISTS  
+✅ DISTINCT  
+✅ IN  
+✅ SUM(CASE WHEN)  
+✅ GROUP BY
+
+**Resultados validados en Oracle:**
+
+• 245 unidades registradas en origen.  
+• 200 correspondientes a comisiones de agentes.  
+• 30 correspondientes a comisiones de promotor elegible.  
+• 15 fuera de las categorías calculadas.
+
+A partir de estos resultados surgen nuevas preguntas funcionales:
+
+❓ ¿Puede un intermediario desempeñar ambos roles comerciales?
+
+❓ ¿Puede recibir comisiones REGULAR y OVERRIDE simultáneamente?
+
+❓ ¿Puede existir una comisión OVERRIDE sin agentes vinculados?
+
+❓ ¿Qué sucede si un agente cambia de promotor durante la vigencia de una póliza?
+
+❓ ¿Cómo debería tratar el sistema las 15 unidades que quedaron fuera de la clasificación?
+
+¿Generar una alerta? ¿Informarlas en una categoría independiente? ¿Solicitar una revisión funcional?
+
+Estas decisiones requieren comprender el negocio antes de modificar la lógica SQL.
+
+🎬 En el video comparto el caso, las relaciones comerciales, la transformación de los datos y los resultados obtenidos en Oracle.
+
+**El análisis técnico-funcional no termina cuando una consulta devuelve resultados. También implica comprender qué representan y qué nuevas preguntas generan.**
+
+#OracleSQL #PLSQL #AnalisisTecnicoFuncional #Seguros #DataQuality #IntegracionDeDatos #ReglasDeNegocio

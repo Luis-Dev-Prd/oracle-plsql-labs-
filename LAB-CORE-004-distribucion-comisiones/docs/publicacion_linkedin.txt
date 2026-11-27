@@ -1,0 +1,20 @@
+🔎 Oracle SQL | Cuando redondear correctamente no es suficiente
+
+En el negocio asegurador, una comisión puede distribuirse entre las cuotas de una póliza. Pero ¿qué sucede cuando el redondeo individual altera el importe total?
+
+En este laboratorio ficticio distribuimos 230 unidades de comisión entre tres parcialidades:
+
+• Comisión de agentes: 200,00.
+• Comisión de promotores elegibles: 30,00.
+• Total sin ajuste: 230,01.
+• Total con ajuste: 230,00.
+
+Mediante ROW_NUMBER(), COUNT(*) OVER(), ROUND() y CASE, asignamos a la última parcialidad el saldo necesario para conciliar los importes.
+
+Validamos en Oracle cuatro escenarios: cuota única, redondeo por exceso, redondeo por defecto y división exacta. Todos obtuvieron diferencia final cero.
+
+Sin embargo, conciliar no reemplaza la validación del dato. ¿Qué diferencia resulta admisible? ¿Cuándo corresponde investigar una inconsistencia en lugar de compensarla?
+
+Estos controles adicionales son oportunidades de evolución del laboratorio, no funcionalidades ya implementadas.
+
+#OracleSQL #PLSQL #AnalisisTecnicoFuncional #Seguros #DataQuality #IntegracionDeDatos
