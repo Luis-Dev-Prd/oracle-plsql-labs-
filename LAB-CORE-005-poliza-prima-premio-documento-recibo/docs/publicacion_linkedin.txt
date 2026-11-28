@@ -1,0 +1,24 @@
+🔷 Negocio asegurador | De la póliza a la cobranza
+
+¿Qué sucede después de emitir una póliza? ¿Cómo se relacionan la prima, el premio, los documentos y los recibos?
+
+Comprender estos conceptos y sus relaciones es fundamental para interpretar los procesos de cobranza dentro de un core de seguros.
+
+🔹 Póliza: formaliza el contrato de seguro, estableciendo las coberturas, condiciones y vigencia.
+🔹 Prima: representa el precio del seguro.
+🔹 Premio: corresponde al importe total que debe pagar el asegurado, considerando los impuestos, cargos y descuentos aplicables.
+🔹 Periodicidad: determina la frecuencia con la que se organiza el pago.
+🔹 Documento: permite identificar y agrupar los diferentes conceptos económicos asociados a la cobranza.
+🔹 Recibo: permite gestionar el importe a cobrar y su seguimiento.
+
+En este ejemplo ficticio, analizamos una póliza de vigencia anual con una prima base de $40.000, un premio de $46.400 y una frecuencia de pago trimestral.
+
+Esto nos permite visualizar cómo una misma póliza puede originar múltiples documentos y recibos durante su vigencia.
+
+Es importante comprender que la emisión de un recibo no implica necesariamente que se haya efectuado su pago.
+
+Además, este circuito puede modificarse posteriormente mediante endosos, aumentos o disminuciones de prima y cambios de periodicidad, temas que abordaremos en próximas publicaciones.
+
+💡 Comprender el negocio es el punto de partida para diseñar soluciones tecnológicas que respeten sus reglas, garanticen la consistencia de los datos y mantengan la trazabilidad de cada operación.
+
+#Seguros #NegocioAsegurador #Cobranza #CoreDeSeguros #AnalisisFuncional #IntegracionDeDatos #ReglasDeNegocio
